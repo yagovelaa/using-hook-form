@@ -1,36 +1,31 @@
 export function App() {
-  function handleSubmit() {
-    console.log("data");
-  }
-
   return (
-    <main className="h-screen flex flex-col gap-6 items-center justify-center">
-      <label className="text-sky-500 font-bold">Formulário usando React Hook Form</label>
-      <form
-        onSubmit={() => handleSubmit()}
-        className="flex flex-col gap-4 w-full max-w-xs"
-      >
+    <main className="h-screen bg-zinc-950 text-zinc-300 flex flex-col gap-6 items-center justify-center">
+      <label className="text-sky-500 font-bold">
+        Formulário usando React Hook Form
+      </label>
+      <form className="flex flex-col gap-4 w-full max-w-xs">
         <div className="flex flex-col gap-1">
-          <label className="text-zinc-800">Nome</label>
+          <label>Nome</label>
           <input
             type="text"
-            className="flex-1 rounded border border-zinc-300 shadow-sm px-3 py-2 text-zinc-800 focus:outline-none focus:ring-2 focus:ring-sky-500"
+            className="flex-1 rounded border bg-zinc-800 border-zinc-600 shadow-sm px-3 py-2 text-white focus:outline-none focus:ring-2 focus:ring-sky-500"
           />
         </div>
 
         <div className="flex flex-col gap-1">
-          <label className="text-zinc-800">E-mail</label>
+          <label>E-mail</label>
           <input
             type="email"
-            className="flex-1 rounded border border-zinc-300 shadow-sm px-3 py-2 text-zinc-800 focus:outline-none focus:ring-2 focus:ring-sky-500"
+            className="flex-1 rounded border bg-zinc-800 border-zinc-600 shadow-sm px-3 py-2 text-white focus:outline-none focus:ring-2 focus:ring-sky-500"
           />
         </div>
 
         <div className="flex flex-col gap-1">
-          <label className="text-zinc-800">Senha</label>
+          <label>Senha</label>
           <input
             type="text"
-            className="flex-1 rounded border border-zinc-300 shadow-sm px-3 py-2 text-zinc-800 focus:outline-none focus:ring-2 focus:ring-sky-500"
+            className="flex-1 rounded border bg-zinc-800 border-zinc-600 shadow-sm px-3 py-2 text-white focus:outline-none focus:ring-2 focus:ring-sky-500"
           />
         </div>
 
